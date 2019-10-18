@@ -5,11 +5,12 @@ package webcam
 
 import (
 	"errors"
-	"golang.org/x/sys/unix"
 	"os"
 	"path/filepath"
 	"reflect"
 	"unsafe"
+
+	"golang.org/x/sys/unix"
 )
 
 // Webcam object
