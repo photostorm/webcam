@@ -5,4 +5,5 @@ before_install:
 
 go:
   - tip
-  - 1.7
+  - 1.12
+  - 1.13
