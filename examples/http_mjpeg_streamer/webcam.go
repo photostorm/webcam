@@ -224,7 +224,7 @@ func encodeToImage(wc *webcam.Webcam, back chan struct{}, fi chan []byte, li cha
 			var err error
 			img, err = jpeg.Decode(bytes.NewBuffer(frame))
 			if err != nil {
-				log.Fatal("Error format jpeg: %v", err.Error)
+				log.Fatal("Error format jpeg: %s", err.Error())
 			}
 		default:
 			log.Fatal("invalid format ?")
